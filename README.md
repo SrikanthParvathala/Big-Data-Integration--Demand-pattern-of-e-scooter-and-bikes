@@ -212,7 +212,7 @@ The details for the questions we aimed to answer for the project are as follows:
 
 
 
-**Analysis 3 - [Busies Bus Stop](https://github.com/SrikanthParvathala/INST767-Project/blob/main/Analysis/busiest-bus-stop.sql)**
+**Analysis 3 - [Busiest Bus Stop](https://github.com/SrikanthParvathala/INST767-Project/blob/main/Analysis/busiest-bus-stop.sql)**
    - The query “busiest-bus-stop”  is to analyze the stop ids with the highest bus traffic. Using this query we can identify the bus stops where the frequency of buses arrived from the day we collected data is highest.
    - The ‘DailyBusVisits’ calculates the number of unique buses that visit each stop on each date. This CTE extracts the date part from the timestamp, counts the number of unique buses (VehicleID) visiting that stop on that date, and groups the results by stop_id and date to ensure counts are calculated per stop per day.
    - The next CTE is the ‘MaxBusVisits’, which finds the maximum number of buses visiting each stop on each date. The ‘MAX(BusCount) AS MaxBusCount’ finds the maximum number of buses that visited any stop on each date and it is grouped by stop_id and date to get the maximum count per stop per day.
